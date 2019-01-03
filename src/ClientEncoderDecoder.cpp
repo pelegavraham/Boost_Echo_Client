@@ -7,7 +7,8 @@
 public class ClientEncoderDecoder {
 
     byte[] encode (string s){
-
+        ClientMessageFactory factory=new ClientEncoderDecoder();
+        return factory.getMessageToSendServer(s);
     }
 
     string decode (byte[] bytes){
